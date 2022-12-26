@@ -57,6 +57,13 @@ const handleColorsChange = async (event) => {
   const colorName = event.target.value;
   const parentElement = event.currentTarget;
   const clickedBtnElement = event.target;
+  // Handling if user click on already selected color option button
+  const currentSelectedColor =
+    document.getElementsByClassName('active')[0].value;
+  console.log(currentSelectedColor);
+  if (colorName === currentSelectedColor) {
+    return;
+  }
   // Theme and Umbrella Image Change
   changeAppTheme(colorOptionsData, colorName);
   // Loader states...
