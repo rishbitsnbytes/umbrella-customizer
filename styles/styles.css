@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('./reset.css');
+@import url('./preview-section.css');
+@import url('./actions-section.css');
+
+/* Variable and font Declarations */
+
+/* Primary Color is the main color which is umbrella color, secondary color is lighter than primary for button borders and tertairy is even lighter for whole app body background. */
+
+:root{    
+    font-family: 'Poppins', sans-serif;
+    --color-primary: ;
+    --color-secondary: ;
+    --color-tertiary: ;
+    --color-white: #ffffff;
+}
+
+
+body {
+    background-color: var(--color-tertiary);
+}
+
+.loader-initial-app-boot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    animation: loaderFadeIn 0.7s ease-in-out;
+}
+
+.loader-initial-app-boot svg {
+    fill: var(--color-primary);
+    animation: loader-rotation 2s infinite ease-in-out;
+}
+
+/* Main section styles */
+.section-main {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    gap: 10rem;
+    min-height: 100vh;
+    width: 80%;
+    max-width: 100rem;
+    margin: auto;
+    animation: loaderFadeIn 0.7s ease-in-out;
+    
+}
+
+.loader {
+    display: none;
+    animation: loaderFadeIn 0.7s ease-in-out;
+}
+
+/* Loader Animation */
+.loader svg {
+    fill: var(--color-primary);
+    animation: loader-rotation 2s infinite ease-in-out;
+}
+
+@keyframes loader-rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+@keyframes loaderFadeIn {
+    from {
+         opacity: 0;
+    }
+
+    to {
+         opacity: 1;
+    }
+}
+
+
+/* Media Queries @ 550px, 768px, 992px */
+
+@media only screen and (max-width: 550px) {
+    :root {
+        font-size: 35%;
+    }
+
+    .section-main {
+        width: 90%;
+        min-height: fit-content;
+        grid-template-columns: repeat( auto-fit, minmax(100%, 1fr) );
+        margin: 5rem auto;
+        gap: 5rem;
+    }
+
+    .logo-uploaded {
+        max-height: 15%;
+        max-width: 15%;
+    }
+
+    .section-preview {
+        min-height: 400px;
+        max-height: 400px;
+    }
+
+    .preview-wrapper {
+        width: 90%;
+        height: 90%;
+    }
+
+    .section-actions {
+        width: 80%;
+        /* max-width: fit-content; */
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+    :root {
+        font-size: 50%;
+    }
+
+    .section-main {
+        width: 80%;
+        min-height: fit-content;
+        grid-template-columns: repeat( auto-fit, minmax(100%, 1fr) );
+        margin: 5rem auto;
+    }
+
+    .logo-uploaded {
+        max-height: 15%;
+        max-width: 15%;
+    }
+
+    .section-preview {
+        min-height: 490px;
+    }
+
+    .preview-wrapper {
+        width: 90%;
+        height: 90%;
+    }
+
+    .section-actions {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    :root {
+        font-size: 55%;
+    }
+
+    .section-main {
+        width: 70%;
+        min-height: fit-content;
+        grid-template-columns: repeat( auto-fit, minmax(100%, 1fr) );
+        margin: 5rem auto;
+    }
+
+    .logo-uploaded {
+        max-height: 15%;
+        max-width: 15%;
+    }
+
+    .section-preview {
+        min-height: 550px;
+    }
+
+    .preview-wrapper {
+        width: 90%;
+        height: 90%;
+    }
+
+    .section-actions {
+        width: 70%;
+    }
+}

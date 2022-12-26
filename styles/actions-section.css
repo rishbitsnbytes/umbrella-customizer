@@ -1,0 +1,126 @@
+/* Action and info section styles */
+.section-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 4rem;
+    max-width: fit-content;
+}
+
+.section-head {
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* color options */
+.color-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.color-options button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid;
+}
+
+.color-options button.active {
+    border: 5px solid var(--color-secondary);
+}
+
+.section-sub-head {
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.text-medium {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.upload-actions  {
+    width: 100%;
+}
+
+.text-small {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin: 0rem;
+}
+
+.btn-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    max-width: 100%;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.loader-upload-button {
+    width: 2rem;
+    height: 2rem;
+}
+
+.btn-upload input {
+    width: 0;
+}
+
+.btn-upload input::-webkit-file-upload-button {
+    -webkit-appearance: none;
+    visibility: hidden;
+}
+
+.btn-upload input::-file-selector-button {
+    visibility: hidden;
+}
+
+#btn-upload svg {
+    fill: var(--color-white);
+    width: 100%;
+    height: 100%;
+}
+
+.loader-upload-btn {
+    height: 2rem;
+    max-width: 2rem;
+    margin: 0 1rem
+}
+
+.icon-upload-btn {
+    min-width: 2rem;
+    max-width: 2rem;
+    height: 100%;
+    margin: 0 1rem
+}
+
+.upload-btn-title {
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-remove-uploaded-logo {
+    display: none;
+    border-radius: 50%;
+    height: 100%;
+    max-width: 3.5rem;
+    min-width: 3.5rem;
+}
+
+.progress {
+    cursor: progress;
+    opacity: 0.7;
+}

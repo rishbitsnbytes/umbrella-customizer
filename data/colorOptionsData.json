@@ -1,0 +1,21 @@
+[{
+    "colorName": "blue",
+    "primaryColor": "#04A3DF",
+    "secondaryColor": "#69c9eb",
+    "tertiaryColor": "#dcf3fb",
+    "imgUrl": "./assets/umbrella-images"
+},
+{
+    "colorName": "pink",
+    "primaryColor": "#d72885",
+    "secondaryColor": "#e678b2",
+    "tertiaryColor": "#fbc3e1",
+    "imgUrl": "./assets/umbrella-images"
+},
+{
+    "colorName": "yellow",
+    "primaryColor": "#FED143",
+    "secondaryColor": "#fee38a",
+    "tertiaryColor": "#fff5d5",
+    "imgUrl": "./assets/umbrella-images"
+}]
