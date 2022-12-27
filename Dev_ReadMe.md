@@ -15,7 +15,13 @@ App has al the thing for good UX, every little action and process is reflected i
 ## 2. Edge Cases
 
 There were few edge cases I could think of and experience while using the app handled and mentioned in code-comments.
-Multiple-upload
+
+> File Size Validation.
+> File Type Validation - this has been handled in 2 ways - native html 'accept' attribute but it has a flaw in which user can change this option in their file explorer and upload file of any other type, so this has been handled through further checks in validation js file.
+> Appropriate error feedback to user when Type or Size or both validation fails.
+> Multiple-upload Prevention
+> Unnecessary clicks prevention when app is under processing state by locking the buttons.
+> Removing of logo, re-upload of same file, reclicking on already selected color etc.
 
 ## 3. Code-Extensibility
 
